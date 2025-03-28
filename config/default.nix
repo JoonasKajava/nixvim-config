@@ -1,4 +1,9 @@
-{
-  # Import all your configuration modules here
-  imports = [ ./bufferline.nix ];
+{inputs, ...}: {
+  imports = [
+    ./settings.nix
+    ./lazy.nix
+    ./keymaps.nix
+    ./autocmd.nix
+    ./plugins/imports.nix
+  ];
 }
